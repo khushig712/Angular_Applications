@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> IPL Home Page </title>
+		<link href="../css/cssStyle.css" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+		<script src="../js/main.js"></script>
+	</head>
+	<body onload="p4init()">
+	<header id="header" class="fixed-top header-transparent">
+		<div class="container ">
+			<a href="../home.html" class="logo"><img src="../images/newLogo.jfif" alt="" ></a> 
+			<nav class="nav-menu">
+				<ul>
+					<li><a href="./loggedHome.html">Home</a></li>
+					<li><a href="./points.html">Tournament Details</a></li>
+					<li><a href="./teamDets.html">Team Details</a></li>
+					<li><a href="./teamAmt.html">Team Stats</a></li>
+					<li><a href="./auction.html">Auction Stats</a></li>
+					<li><a href="./gallery.html">Gallery</a></li>
+					<li><a href="../home.html">Logout</a></li>
+				</ul>
+				</nav>	
+		</div>
+	 </header>
+    <div class="container-fluid content-wrapper">
+            <div class="row">
+                <div class="col" style="float:left;width:45%;padding-top:2%;padding-left:5%">
+                    <div class="container">
+                        <div class="row" id="Batsman-high" style="padding-bottom:2%">
+                            <h4 class="head">Highest paid Batsmen</h4>
+                        </div>
+                        <div class="row" id="Wicket-high" style="padding-bottom:2%">
+                            <h4 class="head">Highest paid Wicket-Keepers</h4>
+                        </div>
+                        <div class="row" id="Bowler-high" style="padding-bottom:2%">
+                            <h4 class="head">Highest paid Bowlers</h4>
+                        </div>
+                        <div class="row" id="All-high">
+                            <h4 class="head">Highest paid All-Rounders</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="float:left;width:40%;padding-left:5%;padding-top:5%">
+                    <!-- search -->
+                    <!-- <h4 class="head">Search for player</h4> -->
+                    <div class="container search-bar" style="padding-bottom:8%">
+                        <div class="row">
+                            <div class='col-7'>
+                                <input class="form-control" type="text" id="search-key" placeholder="Search player">
+                            </div>
+                            <div class='col-2'>
+                                <button type="button" id="search-btn" class="btn btn-info s-btn">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conatainer search-r">
+                        <div class="row" id="search-result">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	<div id="contact" style="margin-top:550px">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div class="container fixed-bottom">
+			<ul class="social-network social-circle">
+				<li><a href="https://www.facebook.com/IPL/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/IPL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/iplt20/?hl=en" class="icoInstagram" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>	
+	</body>
+	    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</html>

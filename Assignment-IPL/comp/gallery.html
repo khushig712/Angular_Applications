@@ -1,0 +1,130 @@
+<html>
+	<head>
+		<title> IPL Home Page </title>
+		<link href="../css/cssStyle.css" rel="stylesheet">
+	</head>
+	<body>
+	<header id="header" class="fixed-top header-transparent">
+		<div class="container ">
+			<a href="../home.html" class="logo"><img src="../images/newLogo.jfif" alt="" ></a> 
+			<nav class="nav-menu">
+				<ul>
+					<li><a href="./loggedHome.html">Home</a></li>
+					<li><a href="./points.html">Tournament Details</a></li>
+					<li><a href="./teamDets.html">Team Details</a></li>
+					<li><a href="./teamAmt.html">Team Stats</a></li>
+					<li><a href="./auction.html">Auction Stats</a></li>
+					<li><a href="./gallery.html">Gallery</a></li>
+					<li><a href="../home.html">Logout</a></li>
+				</ul>
+				</nav>	
+		</div>
+	  </header>
+	  <script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		}
+	  </script>
+
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+			<img src="../images/wp1.jpg" style="width:100%; height:600px;">
+		
+		  </div>
+
+		  <div class="mySlides fade">
+			<img src="../images/wp.jpg" style="width:100%; height:600px;">
+
+		  </div>
+
+		  <div class="mySlides fade">
+			<img src="../images/1.jpg" style="width:100%; height:600px;">
+
+		  </div>
+		  
+		  <div class="mySlides fade">
+			<img src="../images/wp2.jpg" style="width:100%; height:600px;">
+		
+		  </div>
+		  
+		  <div class="mySlides fade">
+			<img src="../images/2.jpg" style="width:100%; height:600px;">
+		
+		  </div>
+		  <div class="mySlides fade">
+			<img src="../images/3.jpg" style="width:100%; height:600px;">
+		
+		  </div>
+		  <div class="mySlides fade">
+			<img src="../images/4.jpg" style="width:100%; height:600px;">
+		
+		  </div>
+		  <div class="mySlides fade">
+			<img src="../images/5.jpg" style="width:100%; height:600px;">
+		
+		  </div>
+		  <div class="mySlides fade">
+			<img src="../images/6.jpg" style="width:100%; height:600px;">
+		
+		  </div>
+		  <div class="mySlides fade">
+			<img src="../images/7.jpg" style="width:100%; height:600px;">
+		
+		  </div>
+
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span>
+		  <span class="dot" onclick="currentSlide(5)"></span>
+		  <span class="dot" onclick="currentSlide(6)"></span>
+		  <span class="dot" onclick="currentSlide(7)"></span>
+		  <span class="dot" onclick="currentSlide(8)"></span>
+		  <span class="dot" onclick="currentSlide(9)"></span>
+		  <span class="dot" onclick="currentSlide(10)"></span>
+		</div>
+		<section id="contact">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div class="container fixed-bottom">
+			<ul class="social-network social-circle">
+				<li><a href="https://www.facebook.com/IPL/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/IPL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/iplt20/?hl=en" class="icoInstagram" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,818 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  color: white;
+  background-color:#19398a;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffce3a;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+#welcome {
+  height: 80vh;
+  width: 100%;
+  background: url("../images/hh.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+
+#welcome:before {
+  content: "";
+  background: rgba(20, 60 , 122, .9);
+  position: relative;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#welcome .dropDown {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 9px 35px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 40px;
+  border: 2px solid pink;
+  color: #fff;
+}
+
+
+#welcome .container {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#welcome h1 {
+  margin: 0;
+  margin-top: 40vh;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: white;
+}
+
+#welcome h2 {
+  color: white;
+  margin: 15px 0 0 0;
+  font-size: 22px;
+}
+
+#welcome .btn-get-started {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 9px 35px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 40px;
+  border: 2px solid pink;
+  color: #fff;
+}
+
+#welcome .btn-get-started:hover {
+  background: pink;
+  color: black;
+}
+
+
+@media (max-width: 992px) {
+  #welcome .container {
+    padding-top: 10;
+  }
+}
+
+/***************************************************************************************/
+
+#header .logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo img {
+  max-height: 100px;
+}
+
+@media (max-width: 992px) {
+  #header .logo {
+    font-size: 28px;
+  }
+}
+
+/***************************************************************************************/
+
+.nav-menu ul {
+  margin: 0;
+  margin-left: 10%;
+  margin-top:-60px;
+  padding: 0;
+  list-style: none;
+  color: white;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 15px;
+}
+
+.nav-menu > ul {
+  display: flex;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  padding: 10px 0 10px 28px;
+}
+.nav-menu a {
+  display: block;
+  position: relative;
+  color: white;
+  transition: 0.3s;
+  font-size: 15px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  color: #ffc107;
+  text-decoration:none;
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+}
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+@media (max-width: 1366px) {
+}
+
+
+/***************************************************************************************/
+
+
+
+/***************************************************************************************/
+
+/*footer social icons*/ 
+.social-network a.icoRss:hover {
+    background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+    background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+    background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+    background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+    background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+    background-color:#007bb7;
+}
+.social-network a.icoInstagram:hover {
+    background-color: orangered;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i, .social-network a.icoInstagram:hover i {
+    color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+    color:#44BCDD;
+}
+
+.social-circle li a {
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+}
+.social-circle li i {
+    margin:0;
+    line-height:50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.social-circle i {
+    color: white;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+#contact{
+	margin-bottom:0px;
+	margin-left:85%;
+}
+
+/*************************************************************************************************/
+.login-box {
+    width: 80%;
+    margin: auto;
+    min-height: 700px;
+    position: relative;
+    background: url("../images/ipl.jpeg") no-repeat center;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19)
+}
+
+.login-snip {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 25% 50px 25%;
+    background: rgba(20, 60 , 122, .9)
+}
+
+.login-snip .login,
+.login-snip .sign-up-form {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear
+}
+
+.login-snip .sign-in,
+.login-snip .sign-up,
+.login-space .group .check {
+    display: none
+}
+
+.login-snip .tab,
+.login-space .group .label,
+.login-space .group .button {
+    text-transform: uppercase
+}
+
+.login-snip .tab {
+    font-size: 22px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent
+}
+
+.login-snip .sign-in:checked+.tab,
+.login-snip .sign-up:checked+.tab {
+    color: #fff;
+    border-color: #1161ee
+}
+
+.login-space {
+	margin-top: 10%;
+    min-height: 345px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d
+}
+
+.login-space .group {
+    margin-bottom: 15px
+}
+
+.login-space .group .label,
+.login-space .group .input,
+.login-space .group .button {
+    width: 100%;
+    color: #fff;
+    display: block
+}
+
+.login-space .group .input,
+.login-space .group .button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .1)
+}
+
+.login-space .group input[data-type="password"] {
+    text-security: circle;
+    -webkit-text-security: circle
+}
+
+.login-space .group .label {
+    color: #fff;
+    font-size: 12px
+}
+
+.login-space .group .button {
+    background: #1161ee
+}
+
+.login-space .group label .icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    background: rgba(255, 255, 255, .1)
+}
+
+.login-space .group label .icon:before,
+.login-space .group label .icon:after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    transition: all .2s ease-in-out 0s
+}
+
+.login-space .group label .icon:before {
+    left: 3px;
+    width: 5px;
+    bottom: 6px;
+    transform: scale(0) rotate(0)
+}
+
+.login-space .group label .icon:after {
+    top: 6px;
+    right: 0;
+    transform: scale(0) rotate(0)
+}
+
+.login-space .group .check:checked+label {
+    color: #fff
+}
+
+.login-space .group .check:checked+label .icon {
+    background: #1161ee
+}
+
+.login-space .group .check:checked+label .icon:before {
+    transform: scale(1) rotate(45deg)
+}
+
+.login-space .group .check:checked+label .icon:after {
+    transform: scale(1) rotate(-45deg)
+}
+
+.login-snip .sign-in:checked+.tab+.sign-up+.tab+.login-space .login {
+    transform: rotate(0)
+}
+
+.login-snip .sign-up:checked+.tab+.login-space .sign-up-form {
+    transform: rotate(0)
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+    display: block
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.hr {
+    height: 2px;
+    margin: 60px 0 50px 0;
+    background: rgba(255, 255, 255, .2)
+}
+
+.foot {
+    text-align: center
+}
+
+.card {
+    width: 100%;
+    left: 100px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+::placeholder {
+    color: white;
+}
+
+/***********************************************************************************************/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+	margin-top:100px;
+  max-width: 80%;
+  height: 620px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*************************************************************************/
+.points{
+	margin-top:100px;
+	width: 100%;
+	font-size:20px;
+	border:auto;
+    margin: auto;
+    min-height: 500px;
+    position: relative;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+	padding: 30px 25% 50px 25%;
+}
+
+table {
+margin-top:5%;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+th{
+	background-color:black;
+}
+/* tr:hover { */
+	/* background-color:white; */
+	/* color:black; */
+/* } */
+
+/****************************************************************************************************************/
+#teams h2{
+	margin-top:50px;
+	margin-left:100px;
+}
+#teams .container {
+  position: relative;
+  height: 300px;
+  width: 600px;
+  top: 20px;
+  left: calc(50% - 300px);
+  display: flex;
+  min-height:350px;
+}
+
+#teams .card {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+ margin-left: -45%; 
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+#teams .card:not(:first-child) {
+    margin-left: -50px;
+}
+
+#teams .card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+#teams .card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+#teams .title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+#teams .bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+#teams .emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+#teams .filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+#teams .card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+#teams .circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+#teams .stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+#teams svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+#teams .card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+/**********************************************************************************************************************/
+.custom-select {
+box-sizing: border-box;
+margin: 0;
+font-family: inherit;
+text-transform: none;
+display: block;
+width: 50%;
+padding-left:20%;
+padding-right:20%;
+height: calc(1.5em + .75rem + 2px);
+padding: .375rem .75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#Batsman-high td{
+	background-color:#343a40;
+	color:white;
+	border-bottom: 1px solid #343a40;
+}
+#Wicket-high td{
+	background-color:#343a40;
+	color:white;
+	border-bottom: 1px solid #343a40;
+}
+#Bowler-high td{
+	background-color:#343a40;
+	color:white;
+	border-bottom: 1px solid #343a40;
+}
+#All-high td{
+	background-color:#343a40;
+	color:white;
+	border-bottom: 1px solid #343a40
+}
+#search-result td{
+	background-color:#343a40;
+	color:white;
+	border-bottom: 1px solid #343a40;
+}
+#search-result th{
+	display:none;
+}
+
+#search-key{
+-webkit-tap-highlight-color: transparent;
+box-sizing: border-box;
+margin: 0;
+font-family: inherit;
+overflow: visible;
+display: block;
+width: 75%;
+height: calc(1.5em + .75rem + 2px);
+padding: .375rem .75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+float:left;
+}
+
+#search-btn{
+-webkit-tap-highlight-color: transparent;
+box-sizing: border-box;
+margin: 0;
+font-family: inherit;
+overflow: visible;
+text-transform: none;
+display: inline-block;
+font-weight: 400;
+text-align: center;
+vertical-align: middle;
+user-select: none;
+border: 1px solid transparent;
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+border-radius: .25rem;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+color: #fff;
+background-color: rgba(255,255,255,.05);
+border-color: rgba(255,255,255,.05);
+cursor: pointer;
+float:right;
+width:20%
+}
+
+/************************************************************************************************************************/
+#card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 5%;
+  margin-bottom:10%;
+}
+
+#card .title {
+  color: white;
+  font-size: 18px;
+}
+
+#card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+  font-size: 18px;
+}
+
+#card button:hover, a:hover {
+  opacity: 0.7;
+}

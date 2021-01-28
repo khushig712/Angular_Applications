@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> IPL Home Page </title>
+		<link href="../css/cssStyle.css" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+		<script src="../js/main.js"></script>
+	</head>
+	<body onload="p2init()">
+	<header id="header" class="fixed-top header-transparent">
+		<div class="container ">
+			<a href="../home.html" class="logo"><img src="../images/newLogo.jfif" alt="" ></a> 
+			<nav class="nav-menu">
+				<ul>
+					<li><a href="./loggedHome.html">Home</a></li>
+					<li><a href="./points.html">Tournament Details</a></li>
+					<li><a href="./teamDets.html">Team Details</a></li>
+					<li><a href="./teamAmt.html">Team Stats</a></li>
+					<li><a href="./auction.html">Auction Stats</a></li>
+					<li><a href="./gallery.html">Gallery</a></li>
+					<li><a href="../home.html">Logout</a></li>
+				</ul>
+				</nav>	
+		</div>
+	 </header>
+    <div class="container form-wrapper" style="padding-top:100px;padding-left:5%">
+		<select class="custom-select" id="team-select">
+            <option>MI</option>
+            <option>RCB</option>
+            <option>DC</option>
+            <option>CSK</option>
+            <option>RR</option>
+            <option>KKR</option>
+            <option>SRH</option>
+            <option>KXIP</option>
+        </select>
+    </div>
+
+    <div class="cotainer player-tb-wrapper">
+        <div class="row">
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-4 col-sm-12" id="player-table" style="float:left;padding-left:5%;width:45%;padding-bottom:10%">
+                <div class="spinner-border text-primary" id="spinner1" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12" style="float:right;padding-right:5%;width:50%">
+                <div class="container">
+                    <div class="row">
+                        <div class="col" style="background-color:#19398a">
+                        <div id="donutchart"  class="pie-chart" style="width: 600px; height: 400px;"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" id="role-table">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="contact">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div class="container fixed-bottom">
+			<ul class="social-network social-circle">
+				<li><a href="https://www.facebook.com/IPL/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/IPL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="https://www.instagram.com/iplt20/?hl=en" class="icoInstagram" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>	
+	</body>
+	    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/one.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</html>
