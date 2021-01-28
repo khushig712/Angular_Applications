@@ -1,0 +1,96 @@
+<div class="row">
+  <div class="col">
+      <h1> CRUD Operations using Angular </h1>
+        <br>
+        <strong class="mr-2">Select view type:</strong>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="viewtype" [value]="'table'" [(ngModel)]="viewType">
+            <label class="form-check-label" for="table view">Table</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="viewtype" [value]="'card'" [(ngModel)]="viewType">
+            <label class="form-check-label" for="table view">Card</label>
+        </div>
+        <br><br>
+        <form [formGroup]="contForm" (ngSubmit)="onSubmit()">
+          <label>Name</label><br>
+          <input type="text" formControlName="name"  [readonly]="name_readonly"/><br>
+          <label>Date of Birth</label><br>
+          <input type="date" formControlName="dob"/><br>
+          <label>Email</label><br>
+          <input type="email" formControlName="email"/><br>
+          <label>Mobile No.</label><br>
+          <input type="text" formControlName="mobile"/><br><br>
+          <button type="submit" class="btn btn-sm btn-success" [disabled]="!contForm.valid">Submit</button>
+      </form>
+      <div class="col">
+        <div *ngIf="contacts.length > 0;then showconts else noconts"></div>
+        <ng-template #showconts>
+          <div [ngSwitch]="viewType">
+              <br><br>
+              <div *ngSwitchCase="'table'">
+                  <table class="table">
+                      <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Date of Birth</th>
+                          <th>Email</th>
+                          <th>Mobile No.</th>
+                          <th></th>
+                          <th></th>
+                      </tr>
+                      <tr *ngFor="let cont of contacts;index as i">
+                          <td>{{i+1}}</td>
+                          <td>{{cont.name}}</td>
+                          <td>{{cont.dob | date:'dd-MM-yyyy'}}</td>
+                          <td>{{cont.email}}</td>
+                          <td>{{cont.mobile}}</td>
+                          <td>
+                              <button
+                              class="btn btn-sm btn-info"
+                              (click)="editCont(cont)">
+                              Edit</button>
+                          </td>
+                          <td>
+                              <button
+                              class="btn btn-sm btn-danger"
+                              (click)="removeCont(cont)">
+                              Delete</button>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <div *ngSwitchCase="'card'">
+                  <div class="card"  *ngFor="let cont of contacts;index as i" style="float:left;width:40%">
+                       <div class="card-body">
+                        <h5 class="card-title">#{{i+1}}. {{cont.name}}</h5>
+                        <p class="card-text">
+                            DOB   : {{cont.dob | date:'yyyy-MM-dd'}}<br>
+                            Email : {{cont.email}}<br>
+                            Mobile No. : {{cont.mobile}}<br><hr>
+                            <button
+                            class="btn btn-sm btn-info"
+                            (click)="editCont(cont)">
+                            Edit</button>
+                            <button
+                            class="btn btn-sm btn-danger"
+                            (click)="removeCont(cont)" style="margin-left: 2%;">
+                            Delete</button>
+                          </p>
+                      </div>
+                    </div>
+              </div>
+              <div *ngSwitchDefault>
+                  <p>Default view....</p>
+              </div>
+
+          </div>
+        </ng-template>
+        <ng-template #noconts>
+            <br><br>
+            <p><strong>There is no entry to show...</strong></p>
+        </ng-template>
+        </div>
+
+</div>
+</div>

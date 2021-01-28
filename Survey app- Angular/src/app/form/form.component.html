@@ -1,0 +1,68 @@
+<div class="container" style="padding-top:3%">
+<form [formGroup]="contForm" (ngSubmit)="onSubmit()">
+  <table class="table-responsive" style="width:105%">
+    <tr >
+      <td><label>Name</label></td>
+      <td colspan="3"><input type="text" formControlName="name"/></td>
+      <td style="width:5%"><label>Mobile</label></td>
+      <td style="width:15%"><input type="text" formControlName="mobile"/><br></td>
+      <td rowspan="2"  style="border:1px solid white">
+        <img src="https://www.careerindia.com/img/2014/06/30-bits-pilani.jpg" height="70px" width="100px">
+      </td>
+    </tr>
+    <tr>
+      <td style="width:10%"><label>Organisation</label></td>
+      <td><input type="text" formControlName="org"/></td>
+      <td style="width:10%"><label>Responsibility</label></td>
+      <td><input type="text" formControlName="resp"/></td>
+      <td><label>Email</label></td>
+      <td style="width:5%"><input type="email" formControlName="email"/><br></td>
+    </tr>
+    </table>
+    <br>
+    <hr>
+    <strong><h3 style="text-align:center">IMPLEMENTATION PLAN FRAMEWORK- SCHOOL EDUCATION</h3></strong>
+    <hr>
+    <br>
+    <table class="table2" *ngFor="let refer of survey;index as id " style="width:100%">
+      <tr>
+        <th colspan="5" style="text-align:left;padding:1% 1% 1% 1%">{{refer.topicName}}</th>
+      </tr>
+      <tr style="background-color:#007bff">
+        <th style="width:7%">Ref#</th>
+        <th style="width:40%">Description</th>
+        <th>Present status in Karnatka</th>
+        <th>Nature of Implications</th>
+        <th>Implementation Timeline</th>
+      </tr>
+      <tr *ngFor="let item of refer.data;index as idx">
+        <td>{{item.ref}}</td>
+        <td>{{item.desc}}</td>
+        <td style="text-align:left;padding:1% 1% 1% 0.5%">
+          <div *ngFor="let opt of section1">
+              <label style="padding-left:1%"><input type="radio" name={{item.ref}}1  value={{opt}} (click)="onCheckChange($event,id,idx,item.ref,1)" [checked]="!reset">  {{opt}}</label>
+          </div>
+        </td>
+        <td style="text-align:left;padding:1% 1% 1% 0.5%">
+          <div *ngFor="let opt of section2">
+              <label style="padding-left:1%"><input type="radio" name={{item.ref}}2  value={{opt}} (click)="onCheckChange($event,id,idx,item.ref,2)" [checked]="!reset">  {{opt}}</label>
+          </div>
+            <input type="text" style="border:1px solid white;border-bottom:1px solid black;width:75%" formControlName="textOther" [hidden]="!enable[idx] ">
+        </td>
+        <td style="text-align:left;padding:1% 1% 1% 0.5%">
+          <div *ngFor="let opt of section3">
+              <label style="padding-left:1%"><input type="radio" name={{item.ref}}3  value={{opt}} (click)="onCheckChange($event,id,idx,item.ref,3)" [checked]="!reset">  {{opt}}</label>
+          </div>
+        </td>
+      </tr>
+      <tr class="blank-row">
+          <td colspan="5">
+          <hr style="width:100%"></td>
+      </tr>
+    </table>
+    <!-- <hr> -->
+      <button type="submit" class="btn btn-sm btn-success" [disabled]="!contForm.valid">Submit</button>
+  </form>
+
+  </div>
+<hr>

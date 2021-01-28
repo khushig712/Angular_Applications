@@ -1,0 +1,21 @@
+tr,td,th{
+  border:1px solid black;
+  text-align: center;
+  /* padding: 1% 0 1% 1% ;  */
+}
+.table-responsive input{
+  width:100%;
+  outline: none;
+  border: 1px solid white;
+}
+.table1 label{
+  /* width: 1%; */
+}
+h3{
+  color: red;
+  font-weight: 650;
+}
+
+.blank-row td{
+  border:1px solid white;
+}
