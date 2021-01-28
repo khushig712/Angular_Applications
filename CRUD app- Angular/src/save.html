@@ -1,0 +1,41 @@
+<!-- <hr>
+<p><strong>Event -Filter</strong></p>
+<input type="text" class="form-control" [(ngModel)]="searchStr" placeholder="Enter the player name" (keyup)="search()">
+<hr>
+<div *ngIf="searchResPlayers.length > 0 && searchStr.trim().length > 0">
+    <table class="table">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Price</th>
+        </tr>
+        <tr *ngFor="let player of searchResPlayers;index as i">
+            <td>{{i+1}}</td>
+            <td>{{player.name}}</td>
+            <td>{{player.role | uppercase}}</td>
+            <td>{{player.price | currency:'INR'}}</td>
+        </tr>
+    </table>
+
+</div>
+<div *ngIf="searchResPlayers.length == 0 && searchStr.trim().length > 0">
+    <p>There no players with the given search name :{{searchStr}}</p>
+</div>
+
+</div>
+<div class="col">
+<p [appCaseconvertor]="''"><strong>Custom Directives</strong></p>
+
+<input type="text"
+        [(ngModel)]="name"
+        placeholder="Enter the name"
+        class="form-control"
+        (keyup.enter)="showName()"
+        [appCaseconvertor]="'upper'"
+   >
+<hr>
+<div *ngFor="let q of questions">
+    <app-question [question]="q"></app-question>
+</div>
+</div> -->
