@@ -1,0 +1,16 @@
+table{
+  margin-bottom: 5%;
+  width: 95%;
+  margin-top: 2%;
+}
+tr{
+  width:100%;
+
+}
+td{
+  width: 25%;
+  border-bottom: 1px solid #ddd;
+}
+.col{
+  float: left;
+}

@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="col" style="width:200%">
+    <form [formGroup]="teamForm" (ngSubmit)="submit()">
+      <h3>Select Team</h3>
+            <!-- <label for="team"></label> -->
+
+            <select formControlName="team" class="form-control" style="width:40%">
+                <!-- <option disabled>Select team</option> -->
+                <option>Choose team</option>
+                <option *ngFor="let team of teamList">{{team}}</option>
+            </select>
+            <!-- <div *ngIf="f.team.touched && f.team.invalid" class="alert alert-danger">
+                <div *ngIf="f.team.errors.required">Name is required.</div>
+            </div> -->
+        <!-- <div style="float:left"> -->
+        <button class="btn btn-success" type="submit" [disabled]="!teamForm.valid" style="margin-top:1%">Submit</button>
+    </form>
+    </div>
+    <div class="col" style="width:47%;float:left;margin-top:1%">
+      <table class="table table-hover" *ngIf="playerList && playerList.length > 0">
+          <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Label</th>
+              <th>Price</th>
+
+          </tr>
+          <tr *ngFor="let player of playerList">
+              <td>{{player.name}}</td>
+              <td>{{player.role}}</td>
+              <td>{{player.label}}</td>
+              <td>{{player.price}}</td>
+          </tr>
+
+      </table>
+    </div>
+
+    <div class="col">
+      <div class="col-s-6">
+        <!-- {{pieChart}} -->
+          <div *ngIf="status" style="float:left;width:50%">
+              <google-chart [data]="pieChart" (chartSelect)="select($event)"></google-chart>
+              <!-- {{pieChart.dataTable[1]}} -->
+         </div>
+         <table class="table table-hover" *ngIf="playerByRole && playerByRole.length > 0" style="float:right;width:47%">
+             <tr>
+                 <th>Name</th>
+                 <th>Role</th>
+                 <th>Label</th>
+                 <th>Price</th>
+
+             </tr>
+             <tr *ngFor="let player of playerByRole">
+                <td>{{player.name}}</td>
+                 <td>{{player.role}}</td>
+                 <td>{{player.label}}</td>
+                 <td>{{player.price}}</td>
+             </tr>
+
+         </table>
+      </div>
+    </div>
+
+</div>
